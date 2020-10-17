@@ -21,6 +21,6 @@ Route::get('/', function () {
         'content' => 'This laravel couse created with a lot of love',
     ];
     Mail::send('emails.test',$data, function($message){
-        $message->to('maryam.kh1374@gmail.com')->subject('Hello Student');
+        $message->to('maryam.kh1374@gmail.com','maryam khodaparast')->subject('Hello Student');
     });
 });
